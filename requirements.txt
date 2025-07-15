@@ -1,0 +1,7 @@
+streamlit
+faiss-cpu
+tiktoken
+transformers
+sentence-transformers
+accelerate
+torch
