@@ -50,9 +50,7 @@ def search_similar_chunks(query, top_k=5):
     query_vec = embedder.encode([query])
     distances, indices = index.search(query_vec, top_k)
     matched = [all_chunks[i]["text"] for i in indices[0] if i < len(all_chunks)]
-    return "
-
-".join(matched)
+    return "\n\n".join(matched)
 
 # Function: ask chatbot
 def ask_chatbot(question):
@@ -83,4 +81,4 @@ if user_input:
     with st.spinner("🤖 Thinking..."):
         answer = ask_chatbot(user_input)
         st.markdown(f"**Bot:** {answer}")
-
+        
