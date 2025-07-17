@@ -1,5 +1,8 @@
-voila
-ipywidgets
+wikipedia
+langchain
+faiss-cpu
+tiktoken
 transformers
 sentence-transformers
-faiss-cpu
+ipywidgets
+voila
