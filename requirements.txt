@@ -1,7 +1,5 @@
-streamlit
-faiss-cpu
-tiktoken
+voila
+ipywidgets
 transformers
 sentence-transformers
-accelerate
-torch
+faiss-cpu
