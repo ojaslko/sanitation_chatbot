@@ -27,9 +27,7 @@ qa_pipeline = pipeline("text-generation", model=model, tokenizer=tokenizer)
 def search_similar_chunks(query, k=3):
     query_vec = embed_model.encode([query])
     distances, indices = index.search(np.array(query_vec).astype("float32"), k)
-    return "
-
-".join([chunks[i] for i in indices[0]])
+    return "\n\n".join([chunks[i] for i in indices[0]])
 
 # Ask function
 def ask_chatbot(question):
