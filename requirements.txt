@@ -1,8 +1,5 @@
-wikipedia
-langchain
-faiss-cpu
-tiktoken
 transformers
 sentence-transformers
-ipywidgets
-voila
+faiss-cpu
+gradio
+torch
